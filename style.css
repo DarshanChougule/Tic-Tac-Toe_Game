@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.head {
+    height: 20vh;
+    border: 5px solid white;
+    text-align: center;
+    background-color: #D8BFD8;
+}
+.rules {
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    text-align: left;
+}
+.main {
+    height: 79vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: auto;
+    background-color: #B2AC88;
+}
+.info {
+    margin: auto;
+}
+.game {
+ 
+    margin: auto;
+    border: 5px solid rgb(189, 224, 186);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+.block {
+    height: 10vw;
+    width: 10vw;
+    border: 2px solid rgb(141, 215, 141);
+    /* transform: scale(10px); */
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+
+.block:hover {
+    background-color: rgb(183, 233, 216);
+   
+}
+#reset {
+    background-color: aquamarine;
+    margin: 5vw;
+    padding: 8px 20px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.span {
+    font-size: larger;
+    transition: font-size 1s ease-in-out;
+}
+.line {
+    width: 0vw;
+    height: 10px;
+    border-radius: 4px;
+    background-color: rgb(216, 29, 230);
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 1000px) {
+    .main {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .rules {
+        font-size: 10px;
+    }
+
+}
+img {
+    width: 0px;
+    transition: width 2s ease-in-out;
+}
